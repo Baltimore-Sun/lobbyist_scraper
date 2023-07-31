@@ -1,10 +1,11 @@
 # Python scraper for Maryland lobbying disclosure activity reports
 
-This is a Python web scraper that pulls information from the 2022-23 lobbying registration session from the Maryland Lobbying Registrations website as of July 25, 2023.
+This is a Python web scraper that pulls information from the 2022-23 lobbying registration session from the [Maryland Lobbying Registrations website](https://lobby-ethics.maryland.gov/public_access?filters%5Bar_date_end%5D=&filters%5Bar_date_start%5D=&filters%5Bar_lobbying_year%5D=2022&filters%5Bc_date_end%5D=&filters%5Bc_date_start%5D=&filters%5Bc_lobbying_year%5D=&filters%5Bdate_selection%5D=Lobbying+Year&filters%5Bemployer_name%5D=&filters%5Blar_date_end%5D=&filters%5Blar_date_start%5D=&filters%5Blar_lobbying_year%5D=&filters%5Blobbying_year%5D=2022&filters%5Breport_type%5D=Activity+Reports&filters%5Breports_containing%5D=&filters%5Bsearch_query%5D=&page=1) as of July 25, 2023.
 
 This scraper was built as a part of two stories by Baltimore Sun politics reporter Sam Janesch. 
-[Who paid lobbyists a total of $48.8 million to influence Maryland lawmaking, and what did they get?]
-[Here’s where lobbyists tried to influence some of Maryland’s biggest policy changes in 2023]
+
+[Who paid lobbyists a total of $48.8 million to influence Maryland lawmaking, and what did they get?]([https://lobby-ethics.maryland.gov/public_access?filters%5Bar_date_end%5D=&filters%5Bar_date_start%5D=&filters%5Bar_lobbying_year%5D=2022&filters%5Bc_date_end%5D=&filters%5Bc_date_start%5D=&filters%5Bc_lobbying_year%5D=&filters%5Bdate_selection%5D=Lobbying+Year&filters%5Bemployer_name%5D=&filters%5Blar_date_end%5D=&filters%5Blar_date_start%5D=&filters%5Blar_lobbying_year%5D=&filters%5Blobbying_year%5D=2022&filters%5Breport_type%5D=Activity+Reports&filters%5Breports_containing%5D=&filters%5Bsearch_query%5D=&page=1](https://www.baltimoresun.com/politics/bs-md-pol-lobbying-2023-20230727-ivzyyt2p6rbylebn2wtmrleole-story.html))
+[Here’s where lobbyists tried to influence some of Maryland’s biggest policy changes in 2023](https://www.baltimoresun.com/politics/bs-md-pol-lobbying-2023-sidebar-20230727-pm2gc7kb75dgrfqpbklj5pw5ae-story.html)
 
 The scraper was built to collect information about topics and bills when the details of an activity report are expanded under sections A3, A7 and A8. The primary goal was to see who was paying lobbyists, the specific bills mentioned and the topics and descriptions used in these registrations. 
 
@@ -143,8 +144,9 @@ I then converted the data to a dataframe and output it as a csv.
 
 To change the session scraped, you’ll need to replace the base URL used here with the base URL of the new session. You’ll also need to adjust the number of pages to make sure you’re grabbing everything from that session. Finally, make sure you double check how the information is formatted in the links so that you can grab what you want.
 
-Copyright and Attribution
+# Copyright and Attribution:
 Copyright 2023 Baltimore Sun. All rights reserved.
 
 If you use this scraper or the data produced from the scraper, you must credit The Baltimore Sun and identify how you have made changes.
-Scraper built and data cleaned by Baltimore Sun data intern Victoria Stavish
+
+*Scraper built and data cleaned by Baltimore Sun data intern Victoria Stavish*
